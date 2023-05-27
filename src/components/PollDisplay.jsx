@@ -33,7 +33,3 @@ const PollDisplay = () => {
 
 export default PollDisplay;
 
-
-// <li key={choice.id}>
-//     {choice.label}: {choice.votes}
-// </li>
