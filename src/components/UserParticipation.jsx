@@ -1,10 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import data from "../data/data.json"
 import AnotherUserParticipation from "./AnotherUserParticipation.jsx";
+import ThankYouMessage from "./ThankYouMessage.jsx";
 
 const UserParticipation = (props) => {
 
     const [language, setLanguage] = useState();
+    const [setSubmit, setSetSubmit] = useState(false);
 
 
     const handleSubmit = (e) => {
@@ -12,11 +14,14 @@ const UserParticipation = (props) => {
 
         console.log(language);
         console.log(props.voteCount);
+
+        setSetSubmit(true);
     }
 
     const handleChange = (e) => {
         const {value} = e.target;
         const val = value.toLowerCase();
+
 
         setLanguage(value);
 
@@ -71,6 +76,13 @@ const UserParticipation = (props) => {
 
 
                 </form>
+
+
+                {
+                    setSubmit && <>
+                        <ThankYouMessage />
+                    </>
+                }
 
 
 
