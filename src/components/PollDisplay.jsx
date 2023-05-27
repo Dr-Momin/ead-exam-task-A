@@ -22,7 +22,7 @@ const PollDisplay = () => {
                     {data.choices.map((item) => (
                         <tr key={item.id}>
                             <td>{item.label}</td>
-                            <td>{item.votes}</td>
+                            <td>{item.votes }</td>
                         </tr>
                     ))}
                 </table>

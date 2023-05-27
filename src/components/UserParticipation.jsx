@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import data from "../data/data.json"
+import AnotherUserParticipation from "./AnotherUserParticipation.jsx";
 
 const UserParticipation = (props) => {
 
@@ -62,6 +63,11 @@ const UserParticipation = (props) => {
 
                     <button type={"submit"}>Submit</button>
 
+
+
+                    <br/><br/>
+
+                    <AnotherUserParticipation />
 
 
                 </form>

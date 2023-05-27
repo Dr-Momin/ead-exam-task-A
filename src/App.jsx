@@ -2,6 +2,7 @@ import './App.css';
 import PollDisplay from "./components/PollDisplay.jsx";
 import UserParticipation from "./components/UserParticipation.jsx";
 import {useState} from "react";
+import AnotherUserParticipation from "./components/AnotherUserParticipation.jsx";
 
 function App() {
 
@@ -21,6 +22,8 @@ function App() {
             voteCount={voteCount}
             setVoteCount={setVoteCount}
         />
+
+
 
     </>
   )
